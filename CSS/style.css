@@ -81,7 +81,7 @@ a {
                          'ajax face pic-three'
                          'ajax face arr'
                          'ajax face arr';
-    width: 60%;
+    width: min(80%, 1500px);
     height: 100%;   
     gap: 1rem;
     grid-auto-rows: 1fr;
@@ -246,7 +246,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: min(80%, 1500px);
     background-color: rgb(213, 229, 238);
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
@@ -263,7 +263,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 60%;
+    width: min(80%, 1500px);
 }
 #latest-work {
     width: 30%;
@@ -276,6 +276,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -380,7 +381,7 @@ a {
     border-top: 0.1rem solid rgb(107, 136, 150);
 }
 #footer-center {
-    width: 60%;
+    width: min(80%, 1500px);
     display: flex;
     align-items: center;
     justify-content: space-between;
