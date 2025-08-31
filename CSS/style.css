@@ -240,15 +240,14 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1rem;
 }
 #white-titles {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 60%;
     background-color: rgb(213, 229, 238);
-    gap: 25rem;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
 }
@@ -257,6 +256,8 @@ a {
     font-weight: normal;
     display: inline-block;
     padding: 0.5rem 0;
+    width: 25%;
+    text-align: center;
 }
 #dark-central {
     display: flex;
@@ -266,13 +267,20 @@ a {
 }
 #latest-work {
     width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+#latest-work > div {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
+
 #lastest-pic {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -299,6 +307,7 @@ a {
 
 #client-testimonial-section {
     width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -306,7 +315,9 @@ a {
 }
 #client-testimonial {
     display: flex;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
 }
 #client-testimonial p {
@@ -339,8 +350,10 @@ a {
 
 #drop-us-a-line {
     width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 5rem;
 }
 #drop-us-a-line > div {
