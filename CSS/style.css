@@ -57,13 +57,12 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    gap: 2rem;
 }
 
 #white-page-section {
-    background-color: white;
+    background-color: rgb(213, 229, 238);
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,30 +75,94 @@ a {
                          'follow follow follow'
                          'design design pic-one'
                          'design design pic-one'
+                         'design design pic-two'
                          'home jq pic-two'
-                         'home jq pic-two'
+                         'home jq pic-three'
                          'ajax face pic-three'
-                         'ajax face pic-three'
+                         'ajax face arr'
                          'ajax face arr';
     width: 60%;
     height: 100%;   
-    gap: 2rem; 
-    grid-auto-rows: 1fr;              
+    gap: 1rem;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;         
 }
 #title {
     grid-area: borneo;
+    color: rgb(47, 80, 110);
+    font-size: 4rem;
+    align-self: center;
 }
 #call-us {
     grid-area: call;
+    color: rgb(47, 80, 110);
+    font-size: 1.5rem;
+    justify-self: end;
+    align-self: center;
 }
 #follow-us-menu {
     grid-area: follow;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    background-color: rgb(234, 241, 247);
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
 }
+#follow-us-menu div:first-of-type {
+    display: flex;
+    gap: 1rem;
+}
+#follow-us-menu div:first-of-type a i {
+    font-size: 2rem;
+    color: rgb(158, 177, 189);
+}
+#follow-us {
+    border: none;
+    color: white;
+    background-color: rgb(47, 80, 110);
+}
+#sub-input {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+#sub-input input {
+    width: 60%;
+    border-radius: 0.2rem 0 0 0.2rem;
+    background-color: rgb(39, 63, 87);
+    height: 2.5rem;       
+    padding: 0 0.5rem;
+    border: none;
+}
+#sub-input input::placeholder {
+    color: white;
+}
+#sub-input button{
+    width: 40%;
+    border-radius: 0 0.2rem 0.2rem 0;
+    background-color: rgb(86, 142, 194);
+    color: white;
+    height: 2.5rem;      
+    padding: 0 0.5rem;
+    border: none;
+}
+
 #design {
     grid-area: design;
+    display: flex;
+    flex-direction: column;
 }
+#design h2 {
+    color: white;
+    font-size: 3rem;
+}
+#design p {
+    color: rgb(39, 63, 87);
+    font-size: 2rem;
+    width: 70%;
+}
+
 #customize {
     grid-area: home;
 }
@@ -125,13 +188,16 @@ a {
     grid-area: pic-three;
 }
 .big-pic {
-    max-height: 10vh;   
-    width: auto;
-    object-fit: contain; 
-    justify-self: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    padding: 0.5rem;
+    border: 0.2rem solid rgb(164, 173, 179);
+    background-color: rgb(223, 229, 233);
+    border-radius: 0.2rem;
 }
 .small-pic {
-    max-height: 10vh;   
+    max-height: 5vh;   
     width: auto;
     object-fit: contain; 
     justify-self: center; 
@@ -141,12 +207,35 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
+    width: 100%;
+}
+.white-small-section div h3 {
+    color: rgb(39, 63, 87);
+    margin-bottom: 0.5rem;
+}
+.white-small-section div p {
+    width: 80%;
+    color: rgb(39, 63, 87);
+}
+#arrows-blue {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 0.5rem;
+}
+#arrows-blue a {
+    font-size: 0.8rem;
+    color: rgb(39, 63, 87);
+    padding: 0.2rem 0.3rem;
+    border: 0.1rem solid rgb(127, 137, 143);
+    border-radius: 50%;
+    background-color: rgb(190, 222, 253);
 }
 
 #dark-page-section {
     background-color: rgb(47, 80, 110);
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,8 +247,8 @@ a {
     justify-content: center;
     align-items: center;
     width: 60%;
-    background-color: white;
-    gap: 30rem;
+    background-color: rgb(213, 229, 238);
+    gap: 25rem;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
 }
@@ -176,39 +265,66 @@ a {
     width: 60%;
 }
 #latest-work {
-    width: 25%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#lastest-pic {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .last-pic {
-    flex: 1 1 calc(50% - 1.5rem); 
-    max-width: calc(50% - 1.5rem);
+    width: 45%;
     height: auto;
     object-fit: cover;
     border: 1rem solid rgb(39, 63, 87);
 }
 #latest-work-arr {
-    
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+#latest-work-arr a {
+    font-size: 0.8rem;
+    color: rgb(39, 63, 87);
+    padding: 0.2rem 0.3rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
 }
 
+#client-testimonial-section {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
 #client-testimonial {
-    width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 #client-testimonial p {
     width: 85%;
 }
 #testimonial-arr {
-    
+    align-self: center;
+    display: flex;
+    gap: 0.5rem;
 }
-
+#testimonial-arr a {
+    font-size: 0.8rem;
+    color: rgb(39, 63, 87);
+    padding: 0.2rem 0.3rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
 #commas-pictures {
     display: flex;
     flex-direction: column;
