@@ -34,6 +34,9 @@ a {
     justify-content: space-between;
     width: 100%;
 }
+#header img {
+    width: 2rem;
+}
 #header div {
     display: flex;
     justify-content: center;
@@ -74,8 +77,8 @@ a {
 
 #white-central {
     display: grid;
-    grid-template-areas: 'borneo bprneo call'
-                         'borneo bprneo call'
+    grid-template-areas: 'borneo call call'
+                         'borneo call call'
                          'follow follow follow'
                          'design design pic-one'
                          'design design pic-one'
@@ -99,16 +102,19 @@ a {
 }
 #call-us {
     grid-area: call;
+    width: 100%;
     color: rgb(47, 80, 110);
     font-size: 1.5rem;
-    justify-self: end;
+    text-align: end;
     align-self: center;
 }
 #follow-us-menu {
     grid-area: follow;
+    height: 3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(234, 241, 247);
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
@@ -458,4 +464,101 @@ a {
 }
 #footer-center div a {
     color: rgb(158, 177, 189);
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+    #lastest-pic {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #drop-us-a-line > div {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 7px;
+    }
+    #white-page-section {
+        height: 60vh;
+    }
+    #dark-page-section {
+        height: 30vh;
+    }
+    #lastest-pic {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3rem;
+    }
+    #drop-us-a-line > div {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #drop-us-a-line-input {
+        gap: 1rem;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    html {
+        font-size: 8px;
+    }
+    #header {
+        height: 10vh;
+    }
+    #main-page {
+        height: 180vh;
+    }
+    #central-section{
+        height: 160vh;
+    }
+    #white-page-section{
+        height: 100vh;
+    }
+    #dark-page-section{
+        height: 60vh;
+    }
+    #lastest-pic {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    #footer {
+        height: 10vh;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    html {
+        font-size: 8px;
+    }
+    #header {
+        height: 10vh;
+    }
+    #main-page {
+        height: 200vh;
+    }
+    #central-section{
+        height: 180vh;
+    }
+    #white-page-section{
+        height: 100vh;
+    }
+    #dark-page-section{
+        height: 80vh;
+    }
+    #footer {
+        height: 10vh;
+    }
 }
