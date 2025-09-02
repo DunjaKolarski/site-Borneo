@@ -210,7 +210,7 @@ a {
     border-radius: 0.2rem;
 }
 .small-pic {
-    height: 3rem;   
+    height: 4rem;   
     width: auto;
     object-fit: cover; 
     justify-self: center; 
