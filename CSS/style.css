@@ -113,11 +113,11 @@ a {
     padding: 0.5rem 0.5rem;
     border-radius: 0.5rem;
 }
-#follow-us-menu div:first-of-type {
+#follow-us-menu > div {
     display: flex;
     gap: 1rem;
 }
-#follow-us-menu div:first-of-type a i {
+#follow-us-menu > div a i {
     font-size: 2rem;
     color: rgb(158, 177, 189);
 }

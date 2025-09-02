@@ -30,10 +30,10 @@
                             <a href="#"><i class="bi bi-skype"></i></a>
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                         </div>
-                        <div id="sub-input">
+                        <form id="sub-input" action="subscribe.php" method="POST">
                             <input type="email" name="email" placeholder="Your e-mail here" class="input" required/>
-                            <button type="" class="button" id="sub-button">Subscribe</button>
-                        </div>
+                            <button type="submit" class="button" id="sub-button">Subscribe</button>
+                        </form>
                     </div>
                     <div id="design" class="white-small-section">
                         <h2>Design That Pops!</h2>
@@ -133,12 +133,12 @@
                             </div>
                             <h2>Borneo</h2>
                         </div>
-                        <div id="drop-us-a-line-input">
-                            <input type="name" name="name" placeholder="Enter your name" class="input" required/>
+                        <form id="drop-us-a-line-input" action="contact.php" method="POST">
+                            <input type="text" name="name" placeholder="Enter your name" class="input" required/>
                             <input type="email" name="email" placeholder="Enter your e-mail" class="input" required/>
                             <textarea name="message" placeholder="Enter your message" required></textarea>
-                            <button type="" class="button" id="send-button">Send</button>
-                        </div>
+                            <button type="submit" class="button" id="send-button">Send</button>
+                        </form>
                     </div> 
                 </div>
             </div>
